@@ -2,8 +2,8 @@ import socket
 import os
 
 # Client configuration
-SERVER_HOST = os.getenv("SERVER_HOST", "127.0.0.1")  # Default to localhost if not set
-SERVER_PORT = int(os.getenv("SERVER_PORT", 5000))  # Default to 5000 if not set
+SERVER_HOST = "192.168.16.1"
+SERVER_PORT = 5000
 
 # File to save the received data
 SAVE_FILE_NAME = 'mydata_client_copy.txt'
