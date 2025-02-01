@@ -1,17 +1,17 @@
 import socket
 
 # Server configuration
-HOST = '0.0.0.0'  # Listen on all interfaces
-PORT = 5000       # Port to bind to
+SERVER_HOST = '0.0.0.0'  # Listen on all interfaces
+SERVER_PORT = 5000       # Port to bind to
 
 # File to be shared
 FILE_NAME = 'mydata.txt'
 
 # Set up the server socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_socket.bind((HOST, PORT))
+server_socket.bind((SERVER_HOST, SERVER_PORT))
 server_socket.listen(1)  # Listen for one connection
-print(f"Server is listening on port {PORT}")
+print(f"Server is listening on port {SERVER_PORT}")
 
 while True:
     # Accept client connection
