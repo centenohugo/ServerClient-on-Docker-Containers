@@ -4,9 +4,7 @@ FROM python:3.8.10
 WORKDIR /client_storage/
 #Copy the files on the host to the docker
 ADD client.py /client_storage/
-#Opent the port where the server will listen
-EXPOSE 5000
-#execute the command to start the server. Bash executed to avoid stopping the container when routing table is 
+#Bash executed to avoid stopping the container when routing table is 
 #still being set
 CMD [ "bash" ]
 
