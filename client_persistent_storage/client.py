@@ -2,7 +2,7 @@ import socket
 import os
 
 # Client configuration
-SERVER_HOST = "192.168.16.1"
+SERVER_HOST = "192.168.16.2"
 SERVER_PORT = 5000
 
 # File to save the received data
